@@ -1,0 +1,13 @@
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.exe
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.deps.json
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.runtimeconfig.json
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.runtimeconfig.dev.json
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.dll
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\bin\Debug\netcoreapp3.1\Boxing.pdb
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.csprojAssemblyReference.cache
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.AssemblyInfoInputs.cache
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.AssemblyInfo.cs
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.dll
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.pdb
+C:\Users\Justin\Desktop\c#\Boxing\Boxing\obj\Debug\netcoreapp3.1\Boxing.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.exe
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.deps.json
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.runtimeconfig.json
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.runtimeconfig.dev.json
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.dll
+C:\Users\Justin\Desktop\c#\human\bin\Debug\netcoreapp3.1\human.pdb
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.csprojAssemblyReference.cache
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.AssemblyInfoInputs.cache
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.AssemblyInfo.cs
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.dll
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.pdb
+C:\Users\Justin\Desktop\c#\human\obj\Debug\netcoreapp3.1\human.genruntimeconfig.cache
