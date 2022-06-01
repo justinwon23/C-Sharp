@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model User
+
+<h1>Welcome to the Dojo Meet up Center</h1>
+<div class="d-flex justify-content-around text-center"> 
+    <div class="text-center">
+        <h1 class="display-4">Register!</h1>
+        <form asp-controller="Home" asp-action='Create' method="POST">
+
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <span asp-validation-for="FirstName"></span>
+                <input asp-for="FirstName" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <span asp-validation-for="LastName"></span>
+                <input asp-for="LastName" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <span asp-validation-for="Email"></span>
+                <input asp-for="Email" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <span asp-validation-for="Password"></span>
+                <input asp-for="Password" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Confirm"></label>
+                <span asp-validation-for="Confirm"></span>
+                <input asp-for="Confirm" />
+            </div>
+
+
+            <button>Submit</button>
+
+
+        </form>
+    </div>
+    <div>
+        <h1 class="display-4">Login!</h1>
+        @{
+            LoginUser newLogin = new LoginUser();
+        }
+        <partial name="_Logging" model="@newLogin"></partial>
+        
+    </div>
+</div>

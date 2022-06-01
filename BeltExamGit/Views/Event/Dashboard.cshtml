@@ -1,0 +1,88 @@
+
+
+@{
+  int? uid = Context.Session.GetInt32("UserId");
+  string FName = Context.Session.GetString("FName");
+  
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex justify-content-between">
+    <h1>Dojo Meet Up Center</h1>
+    <h2>Welcome, @FName</h2>
+    <form asp-controller= "Home" asp-action='LogOut' method="POST">
+        <button>Logout</button>
+    </form>
+
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Meet Up</th>
+                <th scope="col">Date and Time</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Event Coordinator</th>
+                <th scope="col">No. of Participants</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (Event row in ViewBag.AllEvents)
+                {
+                    bool alreadyJoined = row.EventUserJoins.Any(j => j.UserId == uid);
+                    <tr>
+                        <td>
+                            <a asp-controller = "Event" asp-action='ShowOne' asp-route-eventId = "@row.EventId" class="text-dark">
+                            @row.Title
+                            </a>
+                        </td>
+                        <td>@row.DateInNumbers((DateTime) row.EventDate)</td>
+                        <td>@row.Duration @row.TimeMeasure</td>
+                        <td>@row.Planner.FirstName</td>
+                        <td>@row.EventUserJoins.Count</td>
+                        @if (row.UserId == uid)
+                        {
+                            <td>
+                                <form asp-controller="Event" asp-action="Delete" asp-route-eventId="@row.EventId" method="POST">
+                                    <button>Delete</button>
+                                </form>
+                            </td>
+                        }
+                        @if (alreadyJoined && row.UserId != uid)
+                        {
+                            <td>
+                                <form asp-controller="Event" asp-action="UserEventJoin" asp-route-eventId="@row.EventId" method="POST">
+                                    <button>Leave</button>
+                                </form>
+                            </td>
+                        }
+                        @if (alreadyJoined == false && row.UserId != uid)
+                        {
+                            <td>
+                                <form asp-controller="Event" asp-action="UserEventJoin" asp-route-eventId="@row.EventId" method="POST">
+                                    <button>Join</button>
+                                </form>
+                            </td>
+                        }
+
+                        
+                    </tr>
+                }
+            }
+        </tbody>
+
+    </table>
+    <form asp-controller="Event" asp-action='CreateEvent' method="Get">
+        <button>Add New Activity!</button>
+    </form>
+</body>
+</html>
