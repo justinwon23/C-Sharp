@@ -1,0 +1,13 @@
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.exe
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.deps.json
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.runtimeconfig.json
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.runtimeconfig.dev.json
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.dll
+C:\Users\Justin\Desktop\c#\Cards\bin\Debug\netcoreapp3.1\Cards.pdb
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.csprojAssemblyReference.cache
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.AssemblyInfoInputs.cache
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.AssemblyInfo.cs
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.dll
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.pdb
+C:\Users\Justin\Desktop\c#\Cards\obj\Debug\netcoreapp3.1\Cards.genruntimeconfig.cache
