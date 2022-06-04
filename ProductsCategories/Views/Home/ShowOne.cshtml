@@ -1,0 +1,41 @@
+@model Classified
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class= "text-center">@ViewBag.Products.Name</h1>
+    <div class="d-flex justify-content-around text-center">
+        <div>
+            <h2>Categories</h2>
+            @{
+                foreach (var category in ViewBag.Products.Classified)
+                {
+                    <div>@category.Category.Name</div>
+                }
+            }
+        </div>
+            <form asp-controller = "Home" asp-action="CreateAssoc" asp-route-productId = "@ViewBag.Products.Productid"method="Post"> 
+                <label>Add Category!</label>
+                <select asp-for="Categoryid">
+                    @{
+                        foreach (var category in ViewBag.Categories)
+                        {
+                            <option value = "@category.Categoryid">@category.Name</option>
+                        }
+                    }
+                </select>
+                <button>Add!</button>
+
+            </form>
+        <div>
+
+        </div>
+
+    </div>
+</body>
+</html>

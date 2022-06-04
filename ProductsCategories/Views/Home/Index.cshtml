@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Product
+
+<div class="d-flex justify-content-around text-center">
+    <div>
+        <h1>Products</h1>
+        <h2>New Product</h2>
+        <form asp-controller = "Home" asp-action='Create' method="POST">
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <span asp-validation-for="Name"></span>
+            <input asp-for="Name"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <span asp-validation-for="Price"></span>
+            <input asp-for="Price"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <span asp-validation-for="Description"></span>
+            <input asp-for="Description"/>
+        </div>
+
+
+        <button>Submit</button>
+
+
+    </form>
+    </div>
+    <div class="ml-5">
+        <a asp-controller="Category" asp-action="Index">Categories</a>
+        <h2>Existing Products</h2>
+        @{
+            foreach (var product in ViewBag.Products)
+            {
+                <div>
+                <a asp-controller="Home" asp-action="ShowOne" asp-route-productId = "@product.Productid">@product.Name</a>
+                </div>
+            }
+        }
+    </div>
+    
+</div>
