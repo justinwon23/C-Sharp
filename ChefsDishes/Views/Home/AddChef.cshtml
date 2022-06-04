@@ -1,0 +1,40 @@
+@model Chef
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a Chef!</h1>
+    <a asp-controller="Home" asp-action="Index">Home</a>
+        <form asp-controller = "Home" asp-action='Create' method="POST">
+
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <span asp-validation-for="FirstName"></span>
+            <input asp-for="FirstName"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <span asp-validation-for="LastName"></span>
+            <input asp-for="LastName"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DOB"></label>
+            <span asp-validation-for="DOB"></span>
+            <input type="date" asp-for="DOB"/>
+        </div>
+
+
+        <button>Submit</button>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Yum, take a look at our tasty dishes!</h1>
+
+    <a asp-controller="Dish" asp-action="AddDish">Add a Dish</a>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Chef</th>
+            <th>Tastiness</th>
+            <th>Calories</th>
+        </tr>
+        @{
+            foreach (var Dish in ViewBag.Dishes)
+            {
+                <tr>
+                    <td>@Dish.Name</td>
+                    <td>@Dish.Writer.FullName()</td>
+                    <td>@Dish.Tastiness</td>
+                    <td>@Dish.Calories</td>
+                </tr>
+            }
+        }
+
+
+
+</body>
+
+</html>
