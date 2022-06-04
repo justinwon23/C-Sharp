@@ -1,0 +1,22 @@
+@model Dish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>@Model.DishName</h1>
+    <h2>@Model.ChefsName</h2>
+    <p>@Model.Description</p>
+    <p>Calories : @Model.Calories</p>
+    <p>Tastiness : @Model.Tastiness</p>
+    <a asp-controller="Home" asp-action="Edit" asp-route-dishId="@Model.CrudeliciousID">Edit</a>
+    <form asp-controller="Home" asp-action="Delete" asp-route-dishId ="@Model.CrudeliciousID">
+    <button>Delete</button>
+    </form>
+</body>
+</html>
