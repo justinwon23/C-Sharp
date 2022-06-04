@@ -1,0 +1,34 @@
+@model LoginUser
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login!</h1>
+    <form asp-controller = "Home" asp-action='Logging' method="POST">
+        
+        <div class="form-group">
+            <label asp-for="LoginEmail"></label>
+            <span asp-validation-for="LoginEmail"></span>
+            <input asp-for="LoginEmail"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LoginPassword"></label>
+            <span asp-validation-for="LoginPassword"></span>
+            <input asp-for="LoginPassword"/>
+        </div>
+        
+        <button>Submit</button>
+
+
+    </form>
+
+    
+</body>
+</html>
