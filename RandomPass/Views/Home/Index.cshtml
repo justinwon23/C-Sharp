@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    string passcode = @Context.Session.GetString("passcode");
+    }
+
+<div class="text-center">
+    <h1>Random Passcode #@Context.Session.GetInt32("Counter")</h1>
+
+    @* @if (@Context.Session.GetInt32("Counter") > 1)
+    {
+        <h1>Random Passcode #@Context.Session.GetInt32("Counter")</h1>
+    }
+    else {
+        <h1>Random Passcode #1</h1>
+    } *@
+    
+    <form asp-action="Method" method="post" asp-controller="Home">
+    <h2>@Context.Session.GetString("passcode")</h2>
+        
+        <button>Generate!</button>
+
+    </form>
+    
+</div>
